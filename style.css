@@ -280,3 +280,37 @@ font-size:34px;
 }
 
 }
+.counter{
+    margin:35px auto;
+    padding:25px;
+    background:rgba(255,255,255,.55);
+    border-radius:25px;
+    max-width:500px;
+}
+
+.counter h3{
+    color:#ff4d88;
+    margin-bottom:8px;
+}
+
+.timer{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin-top:20px;
+}
+
+.timer div{
+    display:flex;
+    flex-direction:column;
+}
+
+.timer span{
+    font-size:34px;
+    color:#ff4d88;
+    font-weight:bold;
+}
+
+.timer small{
+    color:#666;
+}
