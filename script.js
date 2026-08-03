@@ -39,3 +39,27 @@ function createHeart(){
 }
 
 setInterval(createHeart,350);
+const startDate = new Date("July 18, 2026 00:00:00");
+
+function updateCounter(){
+
+    const now = new Date();
+
+    const diff = now - startDate;
+
+    if(diff < 0) return;
+
+    const days = Math.floor(diff/(1000*60*60*24));
+
+    const hours = Math.floor((diff%(1000*60*60*24))/(1000*60*60));
+
+    const minutes = Math.floor((diff%(1000*60*60))/(1000*60));
+
+    document.getElementById("days").textContent = days;
+    document.getElementById("hours").textContent = hours;
+    document.getElementById("minutes").textContent = minutes;
+}
+
+updateCounter();
+
+setInterval(updateCounter,60000);
