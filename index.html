@@ -1,3 +1,285 @@
-setInterval(() => {
-    document.getElementById("seconds").innerHTML = new Date().getSeconds();
-}, 1000);
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Chubbs ❤️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Background -->
+
+<div id="stars"></div>
+<div id="shooting-stars"></div>
+
+<div class="moon"></div>
+
+<div id="hearts"></div>
+
+<!-- Welcome Screen -->
+
+<section class="hero">
+
+<h1>
+Hi Chubbs ❤️
+</h1>
+
+<h2 id="typing"></h2>
+
+<p class="subtitle">
+
+I made this little universe...
+
+just for you.
+
+</p>
+
+<a href="#letter">
+
+<button>
+
+Begin Our Story ✨
+
+</button>
+
+</a>
+
+</section>
+
+<!-- Love Letter -->
+
+<section id="letter">
+
+<h1 class="heading">
+
+A Letter To My Baby 💌
+
+</h1>
+
+<div class="glass">
+
+<p id="letterText">
+
+</p>
+
+</div>
+
+</section>
+
+<!-- Love Timer -->
+
+<section>
+
+<h1 class="heading">
+
+How Long We've Been Together ⏳
+
+</h1>
+
+<div class="timer-box">
+
+<h2 id="loveTimer">
+
+Loading...
+
+</h2>
+
+<p>
+
+Every second with you has been worth it.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- Reasons -->
+
+<section>
+
+<h1 class="heading">
+
+Reasons Why I Love You ❤️
+
+</h1>
+
+<button onclick="showReason()">
+
+Click Me 🤍
+
+</button>
+
+<div id="reasonBox">
+
+I have endless reasons...
+
+</div>
+
+</section>
+
+<!-- Memory Sky -->
+
+<section>
+
+<h1 class="heading">
+
+If Every Star Was A Memory...
+
+</h1>
+
+<p class="quote">
+
+Then our sky would never stop shining.
+
+✨✨✨
+
+</p>
+
+</section>
+
+<!-- Cute Message -->
+
+<section>
+
+<div class="glass">
+
+<h1>
+
+Just So You Know...
+
+</h1>
+
+<p>
+
+Your smile became one of my favorite places.
+
+Your hugs became my comfort.
+
+Your existence became my happiness.
+
+And somehow...
+
+without even realizing it...
+
+you became my home.
+
+❤️
+
+</p>
+
+</div>
+
+</section>
+
+<!-- Hidden Heart -->
+
+<div id="secretHeart">
+
+❤️
+
+</div>
+
+<div id="secretMessage">
+
+<h1>
+
+You Found My Secret 🥹
+
+</h1>
+
+<p>
+
+If I could choose again...
+
+I'd still choose you.
+
+Again.
+
+Again.
+
+And Again.
+
+❤️
+
+</p>
+
+<button onclick="closeSecret()">
+
+Close
+
+</button>
+
+</div>
+
+<!-- Ending -->
+
+<section class="ending">
+
+<h1>
+
+Thank You ❤️
+
+</h1>
+
+<p>
+
+Thank you for coming into my life.
+
+Thank you for making me laugh.
+
+Thank you for loving me.
+
+No matter where life takes us...
+
+I hope you'll always remember...
+
+there will always be someone cheering for you...
+
+loving you...
+
+and choosing you.
+
+That someone is me.
+
+🤍
+
+</p>
+
+<h2>
+
+Forever Yours,
+
+Sushi ❤️
+
+</h2>
+
+<button id="confettiBtn">
+
+One Last Surprise 🎉
+
+</button>
+
+</section>
+
+<!-- JavaScript -->
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
