@@ -1,285 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Chubbs ❤️</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 
-<title>For Chubbs ❤️</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Great+Vibes&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="style.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- Background -->
+    <!-- Stars -->
+    <div id="stars"></div>
 
-<div id="stars"></div>
-<div id="shooting-stars"></div>
+    <!-- Floating Hearts -->
+    <div id="floating-hearts"></div>
 
-<div class="moon"></div>
+    <!-- Moon -->
+    <div class="moon"></div>
 
-<div id="hearts"></div>
+    <!-- Hero Section -->
+    <section class="hero">
 
-<!-- Welcome Screen -->
+        <h1>Hi Chubbs ❤️</h1>
 
-<section class="hero">
+        <p id="typing"></p>
 
-<h1>
-Hi Chubbs ❤️
-</h1>
+        <button id="startBtn">
+            💌 Open My Heart
+        </button>
 
-<h2 id="typing"></h2>
+    </section>
 
-<p class="subtitle">
+    <!-- Letter -->
+    <section id="letterSection" class="hidden">
 
-I made this little universe...
+        <div class="letter">
 
-just for you.
+            <h2>To My Baby 🤍</h2>
 
-</p>
+            <p id="letterText"></p>
 
-<a href="#letter">
+        </div>
 
-<button>
+    </section>
 
-Begin Our Story ✨
+    <!-- Reasons -->
+    <section class="hidden" id="reasonsSection">
 
-</button>
+        <h2>Why I Love You ❤️</h2>
 
-</a>
+        <button id="reasonBtn">
+            Tell Me 💖
+        </button>
 
-</section>
+        <div id="reasonBox">
+            Click the button ❤️
+        </div>
 
-<!-- Love Letter -->
+    </section>
 
-<section id="letter">
+    <!-- Wish Upon A Star -->
+    <section class="hidden">
 
-<h1 class="heading">
+        <h2>✨ Wish Upon A Star ✨</h2>
 
-A Letter To My Baby 💌
+        <p>
+            Click any glowing star...
+            it might have something to tell you.
+        </p>
 
-</h1>
+    </section>
 
-<div class="glass">
+    <!-- Ending -->
+    <section class="hidden ending">
 
-<p id="letterText">
+        <h1>Thank You ❤️</h1>
 
-</p>
+        <p>
 
-</div>
+            Thank you for being you.
 
-</section>
+            Thank you for making me smile.
 
-<!-- Love Timer -->
+            Thank you for walking into my life.
 
-<section>
+            No matter what happens...
 
-<h1 class="heading">
+            I'll always be cheering for you.
 
-How Long We've Been Together ⏳
+        </p>
 
-</h1>
+        <h2>
 
-<div class="timer-box">
+            Forever Yours,
 
-<h2 id="loveTimer">
+            Sushi ❤️
 
-Loading...
+        </h2>
 
-</h2>
+        <button id="surpriseBtn">
 
-<p>
+            🎉 One Last Surprise
 
-Every second with you has been worth it.
+        </button>
 
-</p>
+    </section>
 
-</div>
+    <!-- Secret Heart -->
 
-</section>
+    <div id="secretHeart">
+        ❤️
+    </div>
 
-<!-- Reasons -->
+    <!-- Secret Popup -->
 
-<section>
+    <div id="secretPopup">
 
-<h1 class="heading">
+        <div class="popup">
 
-Reasons Why I Love You ❤️
+            <h2>You Found My Secret 🥹</h2>
 
-</h1>
+            <p>
 
-<button onclick="showReason()">
+                If I had to choose again...
 
-Click Me 🤍
+                I'd still choose you.
 
-</button>
+                Every single time.
 
-<div id="reasonBox">
+            </p>
 
-I have endless reasons...
+            <button id="closePopup">
+                Close ❤️
+            </button>
 
-</div>
+        </div>
 
-</section>
+    </div>
 
-<!-- Memory Sky -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 
-<section>
-
-<h1 class="heading">
-
-If Every Star Was A Memory...
-
-</h1>
-
-<p class="quote">
-
-Then our sky would never stop shining.
-
-✨✨✨
-
-</p>
-
-</section>
-
-<!-- Cute Message -->
-
-<section>
-
-<div class="glass">
-
-<h1>
-
-Just So You Know...
-
-</h1>
-
-<p>
-
-Your smile became one of my favorite places.
-
-Your hugs became my comfort.
-
-Your existence became my happiness.
-
-And somehow...
-
-without even realizing it...
-
-you became my home.
-
-❤️
-
-</p>
-
-</div>
-
-</section>
-
-<!-- Hidden Heart -->
-
-<div id="secretHeart">
-
-❤️
-
-</div>
-
-<div id="secretMessage">
-
-<h1>
-
-You Found My Secret 🥹
-
-</h1>
-
-<p>
-
-If I could choose again...
-
-I'd still choose you.
-
-Again.
-
-Again.
-
-And Again.
-
-❤️
-
-</p>
-
-<button onclick="closeSecret()">
-
-Close
-
-</button>
-
-</div>
-
-<!-- Ending -->
-
-<section class="ending">
-
-<h1>
-
-Thank You ❤️
-
-</h1>
-
-<p>
-
-Thank you for coming into my life.
-
-Thank you for making me laugh.
-
-Thank you for loving me.
-
-No matter where life takes us...
-
-I hope you'll always remember...
-
-there will always be someone cheering for you...
-
-loving you...
-
-and choosing you.
-
-That someone is me.
-
-🤍
-
-</p>
-
-<h2>
-
-Forever Yours,
-
-Sushi ❤️
-
-</h2>
-
-<button id="confettiBtn">
-
-One Last Surprise 🎉
-
-</button>
-
-</section>
-
-<!-- JavaScript -->
-
-<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
-
 </html>
