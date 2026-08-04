@@ -67,3 +67,34 @@ document.getElementById("surpriseBtn").addEventListener("click", () => {
     };
 
 });
+const surpriseBtn = document.getElementById("surpriseBtn");
+
+if (surpriseBtn) {
+    surpriseBtn.addEventListener("click", () => {
+        confetti({
+            particleCount: 200,
+            spread: 160,
+            origin: { y: 0.6 }
+        });
+
+        setTimeout(() => {
+            alert(
+`❤️ For My Chubbs ❤️
+
+Thank you for being my favorite person.
+
+Thank you for making me smile.
+
+No matter where life takes us...
+
+I'll always be cheering for you.
+
+I love you so much.
+
+Forever yours,
+
+Sushicado ❤️`
+            );
+        }, 500);
+    });
+}
