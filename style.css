@@ -192,3 +192,225 @@ button:hover{
 .hidden{
     display:none;
 }
+/* ===========================
+   REASONS SECTION
+=========================== */
+
+#reasonsSection h2{
+    font-family:'Great Vibes',cursive;
+    font-size:3.5rem;
+    margin-bottom:25px;
+}
+
+#reasonBox{
+    margin-top:25px;
+    width:min(700px,90%);
+    padding:25px;
+    border-radius:20px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,.15);
+    font-size:1.2rem;
+    line-height:1.8;
+    transition:.4s;
+    box-shadow:0 8px 25px rgba(0,0,0,.25);
+}
+
+/* ===========================
+   GENERAL HEADINGS
+=========================== */
+
+section h2{
+    font-family:'Great Vibes',cursive;
+    font-size:3.5rem;
+    margin-bottom:20px;
+}
+
+section p{
+    max-width:800px;
+    line-height:1.8;
+    font-size:1.1rem;
+}
+
+/* ===========================
+   ENDING
+=========================== */
+
+.ending h1{
+    font-family:'Great Vibes',cursive;
+    font-size:5rem;
+    margin-bottom:20px;
+}
+
+.ending h2{
+    margin-top:35px;
+    color:#ffd8ea;
+}
+
+.ending p{
+    width:min(800px,90%);
+    line-height:2;
+}
+
+/* ===========================
+   SECRET HEART
+=========================== */
+
+#secretHeart{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    font-size:2.2rem;
+    cursor:pointer;
+    animation:pulse 2s infinite;
+    user-select:none;
+    z-index:999;
+}
+
+@keyframes pulse{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.25);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+/* ===========================
+   POPUP
+=========================== */
+
+#secretPopup{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.65);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:1000;
+}
+
+.popup{
+    width:min(500px,90%);
+    background:#111c3a;
+    border-radius:25px;
+    padding:35px;
+    text-align:center;
+    border:1px solid rgba(255,255,255,.15);
+    box-shadow:0 10px 40px rgba(0,0,0,.5);
+}
+
+.popup h2{
+    font-family:'Great Vibes',cursive;
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.popup p{
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+/* ===========================
+   FADE ANIMATION
+=========================== */
+
+.hero,
+.letter,
+#reasonBox,
+.popup{
+    animation:fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(35px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#081228;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#ff6fa9;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#ff91bf;
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:3.2rem;
+}
+
+#typing{
+font-size:1.1rem;
+}
+
+section h2,
+#reasonsSection h2,
+.letter h2,
+.popup h2{
+font-size:2.4rem;
+}
+
+.ending h1{
+font-size:3.5rem;
+}
+
+.ending h2{
+font-size:2.2rem;
+}
+
+.letter{
+padding:25px;
+}
+
+#letterText{
+font-size:1rem;
+}
+
+.moon{
+width:80px;
+height:80px;
+top:25px;
+right:20px;
+}
+
+button{
+padding:13px 28px;
+font-size:.95rem;
+}
+
+}
