@@ -1,16 +1,20 @@
 // ============================
 // TYPEWRITER
 // ============================
+const typing = document.getElementById("typing");
+const letter = document.getElementById("letterText");
 
-const message = `Hi Chubbs ❤️
+typing.innerHTML = "A Little Letter For You ❤️";
+
+letter.innerHTML = `
+Hi Chubbs ❤️,
 
 If you're reading this...
 
 that means you clicked on something made just for you.
 
-I know this isn't the biggest gift in the world...
-
-but every line here was made with you in mind.
+I know this isn't the biggest gift in the world,
+but every line here was written with you in mind.
 
 Thank you for walking into my life.
 
@@ -18,49 +22,21 @@ Thank you for making me laugh.
 
 Thank you for making ordinary days feel special.
 
-Your smile somehow became my favorite thing to see.
+Your smile became one of my favorite things in the entire world.
 
-And little by little...
+I'm so lucky that I get to call you mine.
 
-you became one of my favorite people.
+No matter what happens,
+I'll always be cheering for you,
+supporting you,
+and loving you.
 
-I hope whenever life gets difficult...
+I love you so much, Baby. 🤍
 
-you remember there's someone who believes in you,
+Forever yours,
 
-cheers for you,
-
-and loves you so, so much.
-
-I love you, Baby. 🤍
-
-Forever,
-
-Your Sushicado ❤️`;
-
-let index = 0;
-const typing = document.getElementById("typing");
-const letter = document.getElementById("letterText");
-
-function typeWriter(){
-
-if(index < message.length){
-
-typing.innerHTML += message.charAt(index);
-
-letter.innerHTML += message.charAt(index);
-
-index++;
-
-setTimeout(typeWriter,45);
-
-}
-
-}
-
-typeWriter();
-
-
+Sushi ❤️
+`;
 // ============================
 // LOVE TIMER
 // ============================
