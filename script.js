@@ -2,16 +2,8 @@
 // ELEMENTS
 // ============================
 
-const typing = document.getElementById("typing");
-const startBtn = document.getElementById("startBtn");
-const letterSection = document.getElementById("letterSection");
-const reasonsSection = document.getElementById("reasonsSection");
-const ending = document.querySelector(".ending");
-const letterText = document.getElementById("letterText");
-const reasonBtn = document.getElementById("reasonBtn");
-const reasonBox = document.getElementById("reasonBox");
-const wishBox = document.getElementById("wishBox");
 
+const typing = document.getElementById("typing");
 // ============================
 // HERO TYPEWRITER
 // ============================
