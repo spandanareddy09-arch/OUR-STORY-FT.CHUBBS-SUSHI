@@ -7,14 +7,61 @@
 
 <style>
 
-.floating{
-    position:fixed;
-    bottom:-20px;
-    font-size:25px;
-    animation:float 8s infinite;
-    opacity:0.8;
-    z-index:-1;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
+
+
+body{
+
+    background:#050816;
+    color:white;
+    font-family:"Georgia",serif;
+    overflow-x:hidden;
+
+}
+
+
+/* Night sky stars */
+
+.star{
+
+    position:fixed;
+    width:3px;
+    height:3px;
+    background:white;
+    border-radius:50%;
+    animation:twinkle 3s infinite;
+}
+
+
+@keyframes twinkle{
+
+0%,100%{
+    opacity:0.3;
+}
+
+50%{
+    opacity:1;
+}
+
+}
+
+
+
+/* Floating hearts */
+
+.heart{
+
+    position:fixed;
+    bottom:-50px;
+    font-size:25px;
+    animation:float 10s infinite;
+    opacity:0.8;
+}
+
 
 .h1{
     left:10%;
@@ -23,7 +70,7 @@
 
 .h2{
     left:30%;
-    animation-delay:3s;
+    animation-delay:4s;
 }
 
 .h3{
@@ -33,243 +80,420 @@
 
 .h4{
     left:80%;
-    animation-delay:4s;
-}
-
-
-.sparkle{
-    position:fixed;
-    top:10%;
-    font-size:20px;
-    animation:twinkle 3s infinite;
+    animation-delay:6s;
 }
 
 
 @keyframes float{
 
 0%{
-transform:translateY(0);
+    transform:translateY(0);
 }
 
 100%{
-transform:translateY(-110vh);
+    transform:translateY(-110vh);
+    opacity:0;
 }
 
 }
 
 
-@keyframes twinkle{
+
+/* Sections */
+
+
+.hero{
+
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+}
+
+
+.hero h1{
+
+font-size:60px;
+color:#ffb6d9;
+
+}
+
+
+.hero p{
+
+font-size:22px;
+margin-top:20px;
+
+}
+
+
+
+.glow{
+
+font-size:70px;
+animation:pulse 2s infinite;
+
+}
+
+
+@keyframes pulse{
 
 50%{
-transform:scale(1.5);
-opacity:0.3;
+transform:scale(1.2);
 }
 
 }
+
+
+
+
+.box{
+
+width:80%;
+max-width:700px;
+margin:80px auto;
+padding:40px;
+
+background:rgba(255,255,255,0.1);
+
+border-radius:30px;
+
+box-shadow:
+0 0 30px rgba(255,182,217,0.3);
+
+backdrop-filter:blur(10px);
+
+text-align:center;
+
+}
+
+
+
+.box h2{
+
+font-size:35px;
+color:#ffb6d9;
+margin-bottom:25px;
+
+}
+
+
+
+.box p{
+
+font-size:20px;
+line-height:1.8;
+
+}
+
+
+
+
+details{
+
+background:rgba(255,255,255,0.12);
+padding:20px;
+margin:20px;
+border-radius:20px;
+
+}
+
+
+summary{
+
+cursor:pointer;
+font-size:22px;
+color:#ffd6ea;
+
+}
+
+
 
 </style>
+
 </head>
 
 
 <body>
 
 
-<div class="header">
+<!-- Floating hearts -->
+
+<div class="heart h1">❤️</div>
+<div class="heart h2">💗</div>
+<div class="heart h3">💕</div>
+<div class="heart h4">❤️</div>
+
+
+
+<!-- Stars -->
+
+<div class="star" style="top:10%;left:20%"></div>
+<div class="star" style="top:30%;left:70%"></div>
+<div class="star" style="top:60%;left:40%"></div>
+<div class="star" style="top:80%;left:85%"></div>
+<div class="star" style="top:20%;left:90%"></div>
+
+
+
+<!-- Opening -->
+
+<section class="hero">
 
 <div>
 
-<div class="heart">❤️</div>
+<div class="glow">
+❤️
+</div>
 
-<h1>Hi Chubbs 🫶</h1>
+
+<h1>
+Hi Chubbs 🫶
+</h1>
+
 
 <p>
-Welcome to a tiny little world made by your Sushicado 🥑❤️
+Welcome to a tiny universe made by your Sushicado 🥑
 </p>
 
+
 <p>
-Scroll down... I have something to tell you ✨
+I made this little place only for you ✨
 </p>
+
 
 </div>
 
-</div>
+</section>
 
+
+
+
+
+<!-- Message -->
 
 
 <div class="box">
 
-<h2>💌 A Message For You</h2>
+<h2>
+💌 A Message For You
+</h2>
+
 
 <p>
 
 Hey Chubbs ❤️<br><br>
 
-I made this little website because sometimes words are not enough
-to explain how special you are to me.
 
-You are one of the most beautiful parts of my life,
-and I hope this reminds you how much you mean to me.
+I wanted to create something that is just yours.
 
-So here is a little piece of my heart, made only for you.
+Not because words are not enough,
+but because you deserve a little reminder of how special you are.
+
+You bring so much happiness into my life,
+and I hope this little website makes you smile.
 
 <br><br>
 
-Love,
-<br>
+Love,<br>
+
 Your Sushicado 🥑❤️
 
 </p>
 
+
 </div>
 
-
+<!-- Why I Fell For You -->
 
 <div class="box">
 
-<h2>✨ Why I Fell For You</h2>
+<h2>
+✨ Why I Fell For You
+</h2>
+
 
 <details>
-<summary>The way you make me smile 💕</summary>
+
+<summary>The way you make me smile 😊</summary>
+
 <p>
-I fell for you because being with you makes even normal moments feel special.
-You bring happiness into my days without even trying.
+I fell for you because even the smallest conversations with you
+can turn my normal day into a happy one.
 </p>
+
 </details>
 
 
+
 <details>
+
 <summary>Your caring heart 🫶</summary>
+
 <p>
-I fell for the way you care about me and the little efforts you make.
-Those small things mean a lot to me.
+I fell for the way you care,
+the little efforts you make,
+and the way you make me feel important.
 </p>
+
 </details>
 
 
+
 <details>
+
 <summary>The person you are 🌙</summary>
+
 <p>
-I fell for your personality, your kindness, your laugh,
+I fell for your personality,
+your kindness,
+your laugh,
 and all the little things that make you my Chubbs.
 </p>
+
 </details>
 
+
+
 </div>
+
+
+
+
+
+<!-- Reasons Why I Love You -->
+
+
 <div class="box">
 
-<h2>❤️ Reasons Why I Love You</h2>
+<h2>
+❤️ Reasons Why I Love You
+</h2>
+
 
 <details>
+
 <summary>Your smile 😊</summary>
+
 <p>
-Your smile is my favourite thing.
-It has a way of making my day better instantly.
+Your smile is honestly one of my favourite things about you.
+It has the power to make my day brighter instantly.
 </p>
+
 </details>
+
 
 
 <details>
-<summary>Your voice and conversations 💬</summary>
+
+<summary>Our conversations 💬</summary>
+
 <p>
-I love our talks, our random conversations,
-and how I can spend hours just talking with you.
+I love our random talks, our laughs,
+and how I can always be myself with you.
 </p>
+
 </details>
+
 
 
 <details>
-<summary>You make me feel safe 🤍</summary>
+
+<summary>You make me feel special 💕</summary>
+
 <p>
-I love that I can be myself around you and share my feelings with you.
+I love the way you make me feel cared for,
+appreciated, and loved.
 </p>
+
 </details>
+
 
 
 <details>
-<summary>My favourite person 🥑</summary>
+
+<summary>Because you are my Chubbs 🥑</summary>
+
 <p>
-I love you because you are my Chubbs,
-and nobody can replace the happiness you bring into my life.
+There are many reasons I love you,
+but the biggest one is simply because you are you.
 </p>
+
 </details>
+
 
 </div>
 
 
 
-<h2>🌷 Thank You, Chubbs</h2>
 
 
-<p>
-
-Thank you for coming into my life ❤️<br><br>
-
-Thank you for every smile,
-every laugh,
-every conversation,
-and every beautiful memory we have created together.
-
-Thank you for being someone who makes my days happier
-and my heart fuller.
-
-I hope you always remember that you are loved,
-appreciated, and important to your Sushicado. 🥑❤️
-
-<br><br>
-
-No matter how many days pass,
-I will always be grateful for you.
-
-</p>
-
-
-</div>
-
-
+<!-- Thank You -->
 
 
 <div class="box">
 
-<h2>💌 One Last Thing</h2>
+
+<h2>
+🌷 Thank You, Chubbs ❤️
+</h2>
+
+
 
 <p>
 
 Chubbs ❤️<br><br>
 
-If you ever wonder how much you mean to me,
-just remember this little website exists because
-one person was worth creating a whole world for.
 
-Thank you for being my favourite person.
+Thank you for becoming such a beautiful part of my life.
+
+Thank you for every smile, every laugh,
+every conversation, and every memory we create together.
+
+Thank you for your care, your patience,
+and for being someone who makes my days happier.
+
+I hope you always remember that you are loved,
+appreciated, and important to your Sushicado.
 
 <br><br>
 
-With lots of love,
-<br>
 
-Your Sushicado 🥑❤️
+Forever your Sushicado 🥑❤️
 
 </p>
 
-</div>
-
-
-
-<div class="footer">
-
-✨ Made with love for Chubbs by Sushicado ❤️ ✨
 
 </div>
+
+
+
+
+
+<!-- Sparkles -->
+
+<div class="star" style="top:15%;left:50%"></div>
+<div class="star" style="top:45%;left:15%"></div>
+<div class="star" style="top:75%;left:60%"></div>
+<div class="star" style="top:90%;left:30%"></div>
+
+
+
+<div style="
+text-align:center;
+padding:50px;
+font-size:25px;
+color:#ffb6d9;
+">
+
+✨ Made with love by Sushicado for Chubbs ❤️ ✨
+
+</div>
+
 
 
 </body>
-    <div class="floating h1">❤️</div>
-<div class="floating h2">💗</div>
-<div class="floating h3">💕</div>
-<div class="floating h4">❤️</div>
-
-<div class="sparkle" style="left:20%">✨</div>
-<div class="sparkle" style="left:50%">⭐</div>
-<div class="sparkle" style="left:75%">✨</div>
 
 </html>
