@@ -280,37 +280,43 @@ font-size:34px;
 }
 
 }
-.counter{
-    margin:35px auto;
-    padding:25px;
-    background:rgba(255,255,255,.55);
-    border-radius:25px;
-    max-width:500px;
+.counter-section{
+    text-align:center;
+    margin:60px auto;
 }
 
-.counter h3{
+.counter-section h2{
     color:#ff4d88;
-    margin-bottom:8px;
+    font-size:36px;
 }
 
-.timer{
+.counter-section p{
+    color:#666;
+    margin-bottom:25px;
+}
+
+.counter{
     display:flex;
     justify-content:center;
     gap:25px;
-    margin-top:20px;
+    flex-wrap:wrap;
 }
 
-.timer div{
-    display:flex;
-    flex-direction:column;
+.box{
+    width:120px;
+    background:white;
+    border-radius:20px;
+    padding:20px;
+    box-shadow:0 10px 25px rgba(255,105,180,.2);
 }
 
-.timer span{
-    font-size:34px;
-    color:#ff4d88;
+.box span{
+    display:block;
+    font-size:40px;
     font-weight:bold;
+    color:#ff4d88;
 }
 
-.timer small{
-    color:#666;
+.box small{
+    color:#555;
 }
