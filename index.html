@@ -1,149 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For Chubbs ❤️</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Chubbs ❤️</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:linear-gradient(#081229,#1b2d5b);color:#fff;overflow:hidden}
+#stars{position:fixed;inset:0}
+.star{position:absolute;width:2px;height:2px;background:#fff;border-radius:50%;animation:twinkle 2s infinite alternate}
+@keyframes twinkle{from{opacity:.2}to{opacity:1}}
+.container{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;padding:20px;text-align:center}
+button{padding:14px 28px;border:none;border-radius:30px;background:#ff5c9d;color:#fff;font-size:18px;cursor:pointer}
+#letter{display:none;max-width:700px;background:rgba(255,255,255,.1);padding:24px;border-radius:20px;margin-top:20px;white-space:pre-line}
+h1{font-size:52px}
+</style>
 </head>
-
 <body>
+<div id="stars"></div>
+<div class="container">
+<h1>Hi Chubbs ❤️</h1>
+<p id="intro"></p>
+<button id="open">💌 Open My Heart</button>
+<div id="letter"></div>
+</div>
+<script>
+const stars=document.getElementById('stars');
+for(let i=0;i<180;i++){
+ let s=document.createElement('div');
+ s.className='star';
+ s.style.left=Math.random()*100+'vw';
+ s.style.top=Math.random()*100+'vh';
+ s.style.animationDuration=(1+Math.random()*3)+'s';
+ stars.appendChild(s);
+}
+const intro="Someone made this little universe just for you. 🤍";
+let k=0;
+(function type(){ if(k<intro.length){introEl.innerHTML+=intro[k++];setTimeout(type,45);} })();
+var introEl=document.getElementById('intro');
+introEl.innerHTML="";
+k=0;(function type2(){ if(k<intro.length){introEl.innerHTML+=intro[k++];setTimeout(type2,45);} })();
 
-    <!-- Stars -->
-    <div id="stars"></div>
+const msg=`Hi Baby ❤️
 
-    <!-- Floating Hearts -->
-    <div id="floating-hearts"></div>
+Thank you for walking into my life.
 
-    <!-- Moon -->
-    <div class="moon"></div>
+Your smile is still my favorite thing.
 
-    <!-- Hero Section -->
-    <section class="hero">
+This tiny website isn't perfect,
+but every line here was made with love.
 
-        <h1>Hi Chubbs ❤️</h1>
+I hope whenever you visit this page,
+you remember how deeply you're appreciated.
 
-        <p id="typing"></p>
+Forever yours,
 
-        <button id="startBtn">
-            💌 Open My Heart
-        </button>
+Sushicado 🤍`;
 
-    </section>
-
-    <!-- Letter -->
-    <section id="letterSection" class="hidden">
-
-        <div class="letter">
-
-            <h2>To My Baby 🤍</h2>
-
-            <p id="letterText"></p>
-
-        </div>
-
-    </section>
-
-    <!-- Reasons -->
-    <section class="hidden" id="reasonsSection">
-
-        <h2>Why I Love You ❤️</h2>
-
-        <button id="reasonBtn">
-            Tell Me 💖
-        </button>
-
-        <div id="reasonBox">
-            Click the button ❤️
-        </div>
-
-    </section>
-
-    <!-- Wish Upon A Star -->
-    <section class="hidden">
-
-        <h2>✨ Wish Upon A Star ✨</h2>
-
-        <p>
-            Click any glowing star...
-            it might have something to tell you.
-        </p>
-
-    </section>
-
-    <!-- Ending -->
-    <section class="hidden ending">
-
-        <h1>Thank You ❤️</h1>
-
-        <p>
-
-            Thank you for being you.
-
-            Thank you for making me smile.
-
-            Thank you for walking into my life.
-
-            No matter what happens...
-
-            I'll always be cheering for you.
-
-        </p>
-
-        <h2>
-
-            Forever Yours,
-
-            Sushi ❤️
-
-        </h2>
-
-        <button id="surpriseBtn">
-
-            🎉 One Last Surprise
-
-        </button>
-
-    </section>
-
-    <!-- Secret Heart -->
-
-    <div id="secretHeart">
-        ❤️
-    </div>
-
-    <!-- Secret Popup -->
-
-    <div id="secretPopup">
-
-        <div class="popup">
-
-            <h2>You Found My Secret 🥹</h2>
-
-            <p>
-
-                If I had to choose again...
-
-                I'd still choose you.
-
-                Every single time.
-
-            </p>
-
-            <button id="closePopup">
-                Close ❤️
-            </button>
-
-        </div>
-
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
-
-    <script src="script.js"></script>
-
+document.getElementById('open').onclick=()=>{
+ const l=document.getElementById('letter');
+ l.style.display='block';
+ l.textContent='';
+ let i=0;
+ (function write(){
+   if(i<msg.length){l.textContent+=msg[i++];setTimeout(write,30);}
+ })();
+};
+</script>
 </body>
 </html>
